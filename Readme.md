@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Давид Тамлиани](https://up.htmlacademy.ru/htmlcss/31/user/1791901).
-* Наставник: [Кристина Новикова](https://htmlacademy.ru/profile/stina).
+* Наставник: [Анастасия Красавина](https://htmlacademy.ru/profile/id186775).
 
 ---
 
