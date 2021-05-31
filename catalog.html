@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="images/favicon/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
-  <body>
-    <header>
-      <a>
+  <body class="page-body">
+    <header class="main-header">
+      <a class="main-header-logo">
         <img src="images/logo.png" width="138" height="70"
           alt="Логотип проекта Седона">
       </a>
-      <nav>
-        <ul>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
           <li><a href="blank.html">Карта штата</a></li>
@@ -22,11 +26,11 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <form method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
+        <fieldset class="ability">
           <legend>Инфраскутура:</legend>
-          <ul>
+          <ul class="ability-list">
             <li>
               <input
                 type="checkbox"
@@ -37,18 +41,18 @@
               <label for="filter-бассейн">Бассейн</label>
             </li>
             <li>
-              <input type="checkbox" name="парковка" id="filter-парковка" />
-              <label for="filter-парковка">Парковка</label>
+              <input type="checkbox" name="парковка" id="filter-parking" />
+              <label for="filter-parking">Парковка</label>
             </li>
             <li>
-              <input type="checkbox" name="wi-fi" id="filter-wi-fi" />
-              <label for="filter-wi-fi">WI-FI</label>
+              <input type="checkbox" name="wifi" id="filter-wifi" />
+              <label for="filter-wifi">WI-FI</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="type-home">
           <legend>Тип жилья:</legend>
-          <ul>
+          <ul class="ability-list">
             <li>
               <input
                 type="checkbox"
@@ -74,7 +78,7 @@
           </ul>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="price">
           <legend>Стоимости в сутки, ₽:</legend>
           <table border="1" width="20%" cellpadding="5">
             <tr>
@@ -85,30 +89,32 @@
           <div>
             <input type="range" min="0" max="100" step="1" value="80" />
           </div>
-          <button type="submit">Показать</button>
+          <button class="button-see" type="submit">Показать</button>
         </fieldset>
       </form>
       <h2>Найдено:</h2>
-      <nav>
+      <nav class="sort-selector">
         <p>Сортировка:</p>
-        <ul>
+        <ul class="sort">
           <li><a href="blank.html">По цене</a></li>
           <li><a href="blank.html">По типу</a></li>
           <li><a href="blank.html">По рейтингу</a></li>
         </ul>
       </nav>
-      <section>
-        <ul>
+      <section class="examples-house">
+        <ul class="examples-house-hotel">
           <li>
             <p>
               <img src="images/catalog/photo_catalog_1.jpg" width="135" height="90" alt="Amara Resort & Spa">
             </p>
             <div>
-              <h3>Amara Resort & Spa</h3>
+              <a class="house" href="blank.html">
+                <h3>Amara Resort & Spa</h3>
+              </a>
               <p>Гостиница</p>
               <p>от 4000</p>
-              <button type="submit">Подробнее</button>
-              <button type="submit">Забронировать</button>
+              <button class="button-house"  type="submit">Подробнее</button>
+              <button class="button-house"  type="submit">Забронировать</button>
               <p>
                 <img src="images/stars/stars_4.png" width="91" height="17" alt="stars">
               </p>
@@ -116,17 +122,19 @@
             </div>
           </li>
         </ul>
-        <ul>
+        <ul class="examples-house-hotel">
           <li>
             <p>
             <img src="images/catalog/photo_catalog_2.jpg" width="135" height="90" alt="Desert Quail Inn">
             </p>
             <div>
+              <a class="house" href="blank.html">
               <h3>Desert Quail Inn</h3>
+              </a>
               <p>Мотель</p>
               <p>от 3000</p>
-              <button type="submit">Подробнее</button>
-              <button type="submit">Забронировать</button>
+              <button class="button-house"  type="submit">Подробнее</button>
+              <button class="button-house"  type="submit">Забронировать</button>
               <p>
                 <img src="images/stars/stars_3.png" width="65" height="17" alt="stars">
               </p>
@@ -134,17 +142,19 @@
             </div>
           </li>
         </ul>
-        <ul>
+        <ul class="examples-house-hotel">
           <li>
             <p>
               <img src="images/catalog/photo_catalog_3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
             </p>
             <div>
+              <a class="house" href="blank.html">
               <h3>Villas at Poco Diablo</h3>
+              </a>
               <p>Аппартаменты</p>
               <p>от 2000</p>
-              <button type="submit">Подробнее</button>
-              <button type="submit">Забронировать</button>
+              <button class="button-house"  type="submit">Подробнее</button>
+              <button class="button-house"  type="submit">Забронировать</button>
               <p>
                 <img src="images/stars/stars_2.png" width="42" height="17" alt="stars">
               </p>
@@ -153,30 +163,35 @@
           </li>
         </ul>
       </section>
-      <footer>
-        <section>
+      <footer class="main-footer">
+        <section class="footer-contacts">
           <h1>#VISITSEDONA</h1>
-          <a href="tel:+78005558628">+7 (812) 666-02-66</a>
+          <div>
+            <a class="footer-phone" href="tel:+78005558628">+7 (800) 555-86-28</a>
+          </div>
         </section>
+        <a class="map">
+          <img src="images/map.jpg" width="1199" height="594" alt="map">
+        </a>
         <section>
-          <ul>
+          <ul class="social-button">
             <li>
               <a href="#">
-                <img src="images/icons/icon_twitter.svg" width="46" height="48">
+                <img src="images/icons/icon_twitter.svg" width="46" height="48" alt="icon_twitter">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="images/icons/icon_facebook.svg" width="46" height="48">
+                <img src="images/icons/icon_facebook.svg" width="46" height="48" alt="icon_facebook">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="images/icons/icon_youtube.svg" width="46" height="48">
+                <img src="images/icons/icon_youtube.svg" width="46" height="48" alt="icon_youtube">
               </a>
             </li>
           </ul>
-          <a>
+          <a class="footer-copyright">
             <img src="images/create_site.png" alt="Подпись">
           </a>
         </section>

@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="images/favicon/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
-  <body>
-  <header>
-    <a>
+  <body class="page-body">
+  <header class="main-header">
+    <a class="main-header-logo">
       <img src="images/logo.png" width="138" height="70" alt="Логотип проекта Седона"/>
     </a>
-    <nav>
-      <ul>
+    <nav class="main-navigation">
+      <ul class="site-navigation">
         <li><a href="blank.html">Информация</a></li>
         <li><a href="blank.html">Фото и видео</a></li>
         <li><a href="blank.html">Карта штата</a></li>
@@ -27,8 +31,8 @@
         Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
       </p>
     </div>
-      <main>
-    <section>
+      <main class="container">
+    <section class="features">
       <h1>
         Настоящий городок
       </h1>
@@ -40,24 +44,24 @@
           <img src="images/image_1.jpg" width="800" height="256" alt="Фото атракциона"/>
         </a>
     </section>
-    <section>
+    <section class="ability">
       <h2>
         Возможности
       </h2>
-      <ul>
+      <ul class="features-list">
         <li>
-            <img src="images/icons/icon-1.svg" width="75" height="72" alt="Иконка жилья"/>
+            <img src="images/icons/icon_1.svg" width="75" height="72" alt="Иконка жилья"/>
           <p>Жильё<br/>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
         <li>
           <a>
-            <img src="images/icons/icon-2.svg" width="75" height="70" alt="Иконка еды-бургер"/>
+            <img src="images/icons/icon_2.svg" width="75" height="70" alt="Иконка еды-бургер"/>
           </a>
           <p>Еда<br/>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
         <li>
           <a>
-            <img src="images/icons/icon-3.svg" width="64" height="77" alt="Иконка сувениры-подарок"/>
+            <img src="images/icons/icon_3.svg" width="64" height="77" alt="Иконка сувениры-подарок"/>
           </a>
           <p>Сувениры<br/>Не только китайского, но и местного производства!</p>
         </li>
@@ -72,8 +76,8 @@
       <p>
         Да, по нему можно пройти! Если конечно вы осмелитесь
       </p>
-    <section>
-      <ul>
+    <section class="news">
+      <ul class="news-list">
       <li>
         <h3>
           Небольшая площадь
@@ -116,37 +120,37 @@
       <p>
         Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
-      <a href="blank.html">ПОИСК ГОСТИНИЦЫ В Cедоне</a>
+      <a class="button-search" href="blank.html" >ПОИСК ГОСТИНИЦЫ В Cедоне</a>
     </section>
-    <footer>
-      <section>
+    <footer class="main-footer">
+      <section class="footer-contacts">
         <h1>#VISITSEDONA</h1>
-        <div class="phone">
-          <a href="tel:+78005558628">+7 (812) 666-02-66</a>
+        <div>
+          <a class="footer-phone" href="tel:+78005558628">+7 (800) 555-86-28</a>
         </div>
       </section>
-      <a>
+      <a class="map">
         <img src="images/map.jpg" width="1199" height="594" alt="map">
       </a>
       <section>
-        <ul>
+        <ul class="social-button">
           <li>
             <a href="#">
-              <img src="images/icons/icon_twitter.svg" width="46" height="48">
+              <img src="images/icons/icon_twitter.svg" width="46" height="48" alt="icon_twitter">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="images/icons/icon_facebook.svg" width="46" height="48">
+              <img src="images/icons/icon_facebook.svg" width="46" height="48" alt="icon_facebook">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="images/icons/icon_youtube.svg" width="46" height="48">
+              <img src="images/icons/icon_youtube.svg" width="46" height="48" alt="icon_youtube">
             </a>
           </li>
         </ul>
-        <a>
+        <a class="footer-copyright">
           <img src="images/create_site.png" alt="Подпись">
         </a>
       </section>
