@@ -1,0 +1,244 @@
+:root {
+  --basic-black: #000000;
+  --basic-gray: #333333;
+  --basic-ligt-blue: #23a9e1;
+  --basic-hover: #669ec0;
+  --basic-darker-blue: #81b3d2;
+  --blue: #5496BD;
+  --basic-white: #ffffff;
+  --basic-gray-white: #f2f2f2;
+  --basic-extra-gray: #cacaca;
+  --basic-ligt-gray: #a9a9a9;
+  --basic-gray-light: #ababab;
+  --color-white: #BDBBBC;
+  --basic-brown: #491213;
+  --light-brown: #766357;
+  --light-brown-two: #604E43;
+  --light-brown-three: #503E33;
+}
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+.site-navigation,
+.news-list,
+.social-button,
+.examples-house-hotel,
+.sort,
+.ability-list,
+.sort {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-white);
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.house:hover {
+  color: var(--basic-darker-blue);
+}
+
+.sort {
+  color: var(--basic-black);
+  opacity: 0.3;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.sort:hover {
+  color: var(--basic-darker-blue);
+  opacity: 1;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.sort:focus {
+  color: var(--basic-black);
+  opacity: 1;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.site-navigation a:focus,
+.house:focus h3 {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.footer-phone {
+  color: var(--basic-black);
+  font-size: 21px;
+}
+
+.map {
+  position: static;
+}
+
+.button-house-1 {
+  background-color: var(--basic-darker-blue);
+  width: 110px;
+  height: 27px;
+  text-align: center;
+  margin: 6px;
+  border: 0;
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.button-house-2 {
+  background-color: var(--light-brown);
+  width: 110px;
+  height: 27px;
+  text-align: center;
+  margin: 6px;
+  border: 0;
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.button-house-2:hover {
+  background-color: var(--light-brown-two);
+}
+
+.button-house-2:focus {
+  background-color: var(--light-brown-three);
+}
+
+.button-house-1:hover {
+  background-color: var(--basic-hover);
+}
+
+.button-house-1:focus {
+  background-color: var(--blue);
+}
+
+.button-search-hotel {
+  background-color: var(--light-brown);
+  color: var(--basic-white);
+  max-width: 568px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 30px 0;
+}
+
+.button-search-hotel:hover {
+  background-color: var(--light-brown-two);
+}
+
+.house,
+.footer-shell {
+  color: var(--basic-black);
+  list-style: none;
+}
+
+.twitter {
+  background-color: var(--basic-darker-blue);
+  background-position: center;
+  background-size: cover;
+  width: 46px;
+  max-height: 48px;
+  display: block;
+  text-align: center;
+  padding: 16px 0;
+  box-sizing: border-box;
+}
+
+.fb {
+  background-color: var(--basic-darker-blue);
+  background-position: center;
+  background-size: cover;
+  width: 46px;
+  max-height: 48px;
+  display: block;
+  text-align: center;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
+.youtube {
+  background-color: var(--basic-darker-blue);
+  background-position: center;
+  background-size: cover;
+  width: 46px;
+  max-height: 48px;
+  display: block;
+  text-align: center;
+  padding: 16px 0;
+  box-sizing: border-box;
+}
+
+.twitter:hover,
+.fb:hover,
+.youtube:hover {
+  background-color: var(--basic-hover);
+}
+
+.twitter:focus,
+.fb:focus,
+.youtube:focus {
+  background: var(--blue);
+}
+
+.footer-copyright:hover {
+  color: var(--basic-darker-blue);
+}
+
+.lol {
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer-copyright:hover {
+  fill: var(--basic-darker-blue);
+}
+
+.footer-copyright:focus {
+  fill: var(--color-white);
+}
