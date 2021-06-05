@@ -359,6 +359,5 @@ img {
   outline: 5px solid peru;
   outline-offset: -5px;
   max-width: 400px;
-  max-height: 120px;
-  justify-content: center;
+  max-height: 120px
 }
