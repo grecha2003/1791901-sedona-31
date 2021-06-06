@@ -68,7 +68,8 @@ img {
 }
 
 .site-navigation a,
-.user-navigation a {
+.user-navigation a,
+.website {
   color: var(--basic-black);
 }
 
@@ -116,6 +117,8 @@ img {
   outline-offset: -5px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "footer-contacts social-button footer-copyrigh";
+  align-items: center;
 }
 
 .footer-phone {
@@ -335,6 +338,8 @@ img {
 .bridge {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  outline: 5px solid #404;
+  outline-offset: -5px;
 }
 
 .footer-contacts {
@@ -353,11 +358,12 @@ img {
   max-width: 400px;
   max-height: 120px;
   margin-top: 0;
+  text-align: center;
 }
 
-.footer-copyright {
+.footer-name {
   outline: 5px solid peru;
   outline-offset: -5px;
   max-width: 400px;
-  max-height: 120px
+  max-height: 120px;
 }
