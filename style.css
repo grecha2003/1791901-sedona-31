@@ -353,7 +353,7 @@ img {
 .social-button {
   outline: 5px solid var(--light-brown);
   outline-offset: -5px;
-  display: grid;
+  display: flex;
   justify-content: center;
   max-width: 400px;
   max-height: 120px;
