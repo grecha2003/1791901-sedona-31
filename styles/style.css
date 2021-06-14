@@ -4,17 +4,17 @@
   --basic-ligt-blue: #23a9e1;
   --basic-hover: #669ec0;
   --basic-darker-blue: #81b3d2;
-  --blue: #5496BD;
+  --blue: #5496bd;
   --basic-white: #ffffff;
   --basic-gray-white: #f2f2f2;
   --basic-extra-gray: #cacaca;
   --basic-ligt-gray: #a9a9a9;
   --basic-gray-light: #ababab;
-  --color-white: #BDBBBC;
+  --color-white: #bdbbbc;
   --basic-brown: #491213;
   --light-brown: #766357;
-  --light-brown-two: #604E43;
-  --light-brown-three: #503E33;
+  --light-brown-two: #604e43;
+  --light-brown-three: #503e33;
 }
 body {
   min-width: 960px;
@@ -135,7 +135,8 @@ img {
   width: 110px;
   height: 27px;
   text-align: center;
-  margin: 6px;
+  margin-bottom: 3px;
+  margin-right: 6px;
   border: 0;
   color: var(--basic-white);
   font-size: 14px;
@@ -147,11 +148,15 @@ img {
   width: 110px;
   height: 27px;
   text-align: center;
-  margin: 6px;
   border: 0;
   color: var(--basic-white);
   font-size: 14px;
   line-height: 21px;
+}
+
+.bh {
+  margin-left: 29px;
+  display: flex;
 }
 
 .button-house-2:hover {
@@ -400,7 +405,6 @@ img {
 .ability {
   display: inline-flex;
   margin-right: 50px;
-
 }
 
 .ability-1 {
@@ -429,8 +433,9 @@ img {
 }
 
 .hause-img {
-  margin-right: 30px;
-  padding: 15px 0;
+  margin-right: 0px;
+  margin-top: 40px;
+  padding: 0px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -452,14 +457,32 @@ img {
 
 .hotel-text-1 {
   display: flex;
+  margin-left: 29px;
 }
 
 .text-3 {
-  margin-right: 38px;
-  margin-top: -10px;
+  margin-right: 32px;
+  margin-top: 0px;
   color: #333333;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
+}
+
+.hause-img-1 {
+  display: flex;
+  align-items: center;
+}
+
+.stars-img {
+  margin-top: 52px;
+  margin-left: 400px;
+  text-align: right;
+}
+
+.name-hause {
+  margin-top: 23px;
+  margin-bottom: -5px;
+  margin-left: 29px;
 }
