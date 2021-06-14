@@ -284,8 +284,6 @@ img {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-  outline: 5px solid blue;
-  outline-offset: -5px;
 }
 
 .features {
@@ -368,98 +366,4 @@ img {
   outline-offset: -5px;
   max-width: 400px;
   max-height: 120px;
-}
-
-.type-home-2 {
-  outline: 5px solid brown;
-  outline-offset: -5px;
-}
-
-.examples-house {
-  outline: 5px solid var(--basic-gray);
-  outline-offset: -5px;
-}
-
-.found,
-.sort,
-.sort-1,
-.sort-selector {
-  display: flex;
-  margin-right: 40px;
-  margin-left: 20px;
-}
-
-.sort {
-  margin-right: 20px;
-}
-
-.sort-1 {
-  margin-right: -35px;
-}
-
-.ability {
-  display: inline-flex;
-  margin-right: 50px;
-
-}
-
-.ability-1 {
-  display: inline-flex;
-}
-
-.price-1 {
-  display: inline-flex;
-  margin-left: 250px;
-}
-
-.type-home-2 {
-  height: 125px;
-}
-
-.button-see-1 {
-  display: flex;
-  justify-content: center;
-}
-
-.hauses-preice {
-  width: 100%;
-  justify-content: space-between;
-  display: flex;
-  align-items: flex-end;
-}
-
-.hause-img {
-  margin-right: 30px;
-  padding: 15px 0;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-}
-
-.text-stars {
-  color: #666666;
-  background-color: #f6f6f6;
-  width: 110px;
-  height: 27px;
-  text-align: center;
-  font-size: 13px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.hotel-text-1 {
-  display: flex;
-}
-
-.text-3 {
-  margin-right: 38px;
-  margin-top: -10px;
-  color: #333333;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
 }
