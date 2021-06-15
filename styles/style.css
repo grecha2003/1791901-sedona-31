@@ -4,17 +4,17 @@
   --basic-ligt-blue: #23a9e1;
   --basic-hover: #669ec0;
   --basic-darker-blue: #81b3d2;
-  --blue: #5496BD;
+  --blue: #5496bd;
   --basic-white: #ffffff;
   --basic-gray-white: #f2f2f2;
   --basic-extra-gray: #cacaca;
   --basic-ligt-gray: #a9a9a9;
   --basic-gray-light: #ababab;
-  --color-white: #BDBBBC;
+  --color-white: #bdbbbc;
   --basic-brown: #491213;
   --light-brown: #766357;
-  --light-brown-two: #604E43;
-  --light-brown-three: #503E33;
+  --light-brown-two: #604e43;
+  --light-brown-three: #503e33;
 }
 body {
   min-width: 960px;
@@ -135,7 +135,8 @@ img {
   width: 110px;
   height: 27px;
   text-align: center;
-  margin: 6px;
+  margin-bottom: 3px;
+  margin-right: 6px;
   border: 0;
   color: var(--basic-white);
   font-size: 14px;
@@ -147,11 +148,15 @@ img {
   width: 110px;
   height: 27px;
   text-align: center;
-  margin: 6px;
   border: 0;
   color: var(--basic-white);
   font-size: 14px;
   line-height: 21px;
+}
+
+.bh {
+  margin-left: 29px;
+  display: flex;
 }
 
 .button-house-2:hover {
@@ -284,6 +289,8 @@ img {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
+  outline: 5px solid blue;
+  outline-offset: -5px;
 }
 
 .features {
@@ -366,4 +373,116 @@ img {
   outline-offset: -5px;
   max-width: 400px;
   max-height: 120px;
+}
+
+.type-home-2 {
+  outline: 5px solid brown;
+  outline-offset: -5px;
+}
+
+.examples-house {
+  outline: 5px solid var(--basic-gray);
+  outline-offset: -5px;
+}
+
+.found,
+.sort,
+.sort-1,
+.sort-selector {
+  display: flex;
+  margin-right: 40px;
+  margin-left: 20px;
+}
+
+.sort {
+  margin-right: 20px;
+}
+
+.sort-1 {
+  margin-right: -35px;
+}
+
+.ability {
+  display: inline-flex;
+  margin-right: 50px;
+}
+
+.ability-1 {
+  display: inline-flex;
+}
+
+.price-1 {
+  display: inline-flex;
+  margin-left: 250px;
+}
+
+.type-home-2 {
+  height: 125px;
+}
+
+.button-see-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.hauses-preice {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hause-img {
+  margin-right: 0px;
+  margin-top: 40px;
+  padding: 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.text-stars {
+  color: #666666;
+  background-color: #f6f6f6;
+  width: 110px;
+  height: 27px;
+  text-align: center;
+  font-size: 13px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.hotel-text-1 {
+  display: flex;
+  margin-left: 29px;
+}
+
+.text-3 {
+  margin-right: 32px;
+  margin-top: 0px;
+  color: #333333;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.hause-img-1 {
+  display: flex;
+  align-items: center;
+}
+
+.stars-img {
+  margin-top: 52px;
+  margin-left: 400px;
+  text-align: right;
+}
+
+.name-hause {
+  margin-top: 23px;
+  margin-bottom: -5px;
+  margin-left: 29px;
 }
