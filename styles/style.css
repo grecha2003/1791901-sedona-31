@@ -27,7 +27,6 @@ body {
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
-
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -50,9 +49,12 @@ img {
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
+  padding: 0 70px;
   color: var(--basic-black);
   background-color: transparent;
 }
+
+
 .site-navigation,
 .news-list,
 .social-button,
@@ -76,6 +78,19 @@ img {
 .site-navigation a:hover,
 .house:hover {
   color: var(--basic-darker-blue);
+}
+
+nav {
+  display: block;
+}
+
+.header-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 140px;
 }
 
 .sort {
@@ -119,11 +134,18 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "footer-contacts social-button footer-copyrigh";
   align-items: center;
+  width: 1200px;
+  min-height: 120px;
 }
 
-.footer-phone {
+.footer-phone,
+.sedona-center {
   color: var(--basic-black);
   font-size: 21px;
+}
+
+.sedona-2 { 
+  color: #333333;
 }
 
 .map {
@@ -200,6 +222,23 @@ img {
   list-style: none;
 }
 
+.inter {
+  text-align: center;
+  font-size: 30px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.inter-2 {
+  text-align: center;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+
 .twitter {
   background-color: var(--basic-darker-blue);
   background-position: center;
@@ -210,6 +249,7 @@ img {
   text-align: center;
   padding: 16px 0;
   box-sizing: border-box;
+  margin-right: 6px;
 }
 
 .fb {
@@ -222,6 +262,7 @@ img {
   text-align: center;
   padding: 12px 0;
   box-sizing: border-box;
+  margin-right: 6px;
 }
 
 .youtube {
@@ -272,25 +313,54 @@ img {
   display: grid;
   outline: 5px solid green;
   outline-offset: -5px;
+  position: relative;
 }
 
-.main-header-logo {
-  outline: 5px solid violet;
-  outline-offset: -5px;
-  justify-self: center;
+.main-header ul {
+  display: flex; 
+  margin: 0; 
 }
 
-.site-navigation {
-  outline: 5px solid burlywood;
-  outline-offset: -5px;
+ul {
+  padding: 0;
+  align-items: center;
+  min-height: 55px;
+}
+
+.site-navigation li:nth-child(1) {
+  margin-right: auto;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: auto;
+  padding-right: 148px;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: auto;
+  padding-right: 12px;
+}
+
+.site-navigation li:nth-child(4) {
+  margin-left: auto;
+  padding-right: 4px;
+}
+
+.footer-all {
+  display: flex;
+  justify-content: center;
 }
 
 .container {
-  width: 940px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 5px 5px;
   outline: 5px solid blue;
   outline-offset: -5px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0px 0px 15px 5px rgb(0 1 1 / 20%);
 }
 
 .features {
@@ -300,7 +370,6 @@ img {
   grid-template-columns: 1fr 1fr;
 }
 
-.features-list,
 .news-list {
   outline: 5px solid palevioletred;
   outline-offset: -5px;
@@ -308,7 +377,14 @@ img {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 20px;
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #eeeeee;
 }
 
 .icon-live,
@@ -316,6 +392,11 @@ img {
 .icon-souvenirs {
   outline: 5px solid pink;
   outline-offset: -5px;
+  width: 400px;
+  min-height: 285px;
+  text-align: center;
+  margin-top: 60px;
+  background-color: #eeeeee;
 }
 
 .road,
@@ -323,6 +404,14 @@ img {
 .few-tourists {
   outline: 5px solid var(--basic-gray);
   outline-offset: -5px;
+  min-height: 256px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #eeeeee;
+}
+
+.news-1 {
+ color: #333333;
 }
 
 .features-list p,
@@ -355,24 +444,27 @@ img {
   max-width: 327px;
   max-height: 121px;
   justify-content: left;
+  margin-left: 150px;
 }
 
 .social-button {
   outline: 5px solid var(--light-brown);
   outline-offset: -5px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   max-width: 400px;
   max-height: 120px;
   margin-top: 0;
+  margin-left: 90px;
   text-align: center;
 }
 
 .footer-name {
   outline: 5px solid peru;
   outline-offset: -5px;
-  max-width: 400px;
+  max-width: 200px;
   max-height: 120px;
+  margin-left: 50px;
 }
 
 .type-home-2 {
@@ -391,7 +483,7 @@ img {
 .sort-selector {
   display: flex;
   margin-right: 40px;
-  margin-left: 20px;
+  margin-left: 37px;
 }
 
 .sort {
@@ -435,6 +527,7 @@ img {
 .hause-img {
   margin-right: 0px;
   margin-top: 40px;
+  margin-left: 70px;
   padding: 0px;
   display: flex;
   flex-flow: row nowrap;
@@ -477,7 +570,7 @@ img {
 
 .stars-img {
   margin-top: 52px;
-  margin-left: 400px;
+  margin-left: 580px;
   text-align: right;
 }
 
@@ -485,4 +578,26 @@ img {
   margin-top: 23px;
   margin-bottom: -5px;
   margin-left: 29px;
+}
+
+.sedona-1 {
+  width: 400px;
+  min-height: 256px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #81b3d2;
+  color: #fff;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  line-height: 28px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.photo,
+.bridge-photo { 
+  width: 800px;
+  min-height: 256px;
 }
