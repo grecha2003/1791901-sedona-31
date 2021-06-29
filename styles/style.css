@@ -493,6 +493,7 @@ ul {
   display: flex;
   margin-right: 40px;
   margin-left: 37px;
+  align-items: center;
 }
 
 .sort {
@@ -579,7 +580,7 @@ ul {
 
 .stars-img {
   margin-top: 52px;
-  margin-left: 580px;
+  margin-left: 560px;
   text-align: right;
 }
 
