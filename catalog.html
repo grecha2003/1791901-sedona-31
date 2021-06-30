@@ -33,69 +33,62 @@
   </header>
   <main class="container width-site">
     <section class="type-home-2">
-      <form method="get" action="https://echo.htmlacademy.ru">
+      <form class="selection-post" method="post" action="#">
         <div class="ability">
-          <fieldset>
-            <legend>Инфраскутура:</legend>
-            <ul class="ability-list">
-              <li>
-                <input type="checkbox" name="бассейн" id="filter-бассейн" checked />
-                <label for="filter-бассейн">Бассейн</label>
-              </li>
-              <li>
-                <input type="checkbox" name="парковка" id="filter-parking" />
-                <label for="filter-parking">Парковка</label>
-              </li>
-              <li>
-                <input type="checkbox" name="wifi" id="filter-wifi" />
-                <label for="filter-wifi">WI-FI</label>
-              </li>
-            </ul>
-          </fieldset>
+        <ul>
+          <h2>Инфраструктура:</h2>
+          <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" value="Бассейн" id="checkbox01" checked>
+          <label for="checkbox01">Бассейн</label></li>
+          <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox" name="parking" value="Парковка" id="checkbox02">
+          <label for="checkbox02">Парковка</label></li>
+          <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox" name="wifi" value="Парковка" id="checkbox03">
+          <label for="checkbox03">Wi-Fi</label></li>
+        </ul>
         </div>
         <div class="ability-1">
-          <fieldset>
-            <legend>Тип жилья:</legend>
-            <ul class="ability-list">
-              <li>
-                <input type="checkbox" name="гостиница" id="filter-гостиница" checked />
-                <label for="filter-гостиница">Гостиница</label>
-              </li>
-              <li>
-                <input type="checkbox" name="мотель" id="filter-мотель" checked />
-                <label for="filter-мотель">Мотель</label>
-              </li>
-              <li>
-                <input type="checkbox" name="аппартаменты" id="filter-аппартаменты" checked />
-                <label for="filter-аппартаменты">Аппартаменты</label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
+          <ul>
+            <h2>Тип жилья:</h2>
+            <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" value="Гостиница" id="checkbox04" checked>
+            <label for="checkbox04">Гостиница</label></li>
+            <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" value="Мотель" id="checkbox05" checked>
+            <label for="checkbox05">Мотель</label></li>
+            <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartments" value="Апартаменты" id="checkbox06" checked>
+            <label for="checkbox06">Апартаменты</label></li>
+          </ul>
+          </div>
         <div class="price-1">
-          <fieldset class="price">
-            <legend>Стоимости в сутки, ₽:</legend>
-            <table border="1" width="20%" padding="5">
-              <tr>
-                <th>От 0</th>
-                <th>До 3000</th>
-              </tr>
-            </table>
-            <input type="range" min="0" max="100" step="1" value="80" />
-            <div class="button-see-1"><button class="button-see" type="submit">Показать</button></div>
-          </fieldset>
+          <div class="price-title">Стоимости в сутки, ₽:</div>
+          <div class="cost-control">
+            <label class="cost-from">От <input type="text" name="from" value="0" id="from-value"></label>
+            <label class="cost-to">До <input type="text" name="to" value="3000" id="to-value"></label>
+          </div>
+          <div class="cost-range">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          <div>
+          <button type="button" name="show">Показать</button>
         </div>
       </form>
     </section>
-    <nav class="sort-selector">
+    <section class="sort-selector">
       <h2 class="found">Найдено: 3</h2>
-      <p class="sort-1">Сортировка:</p>
+      <div class="sort-1">Сортировка:
       <ul class="sort">
         <li><a class="sort" href="blank.html">По цене</a></li>
         <li><a class="sort" href="blank.html">По типу</a></li>
         <li><a class="sort" href="blank.html">По рейтингу</a></li>
       </ul>
-    </nav>
+    </div>
+    <div class="sorting-price">
+      <ul class="sorting-price-list">
+        <li><a href="#"><span class="icon-up"></span></a></li>
+        <li><a><span class="icon-down active"></span></a></li>
+      </ul>
+    </div>
+    </section>
     <section class="examples-house">
       <ul class="examples-house-hotel">
         <li class="hauses-preice">
