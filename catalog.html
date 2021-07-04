@@ -14,6 +14,7 @@
 </head>
 
 <body class="page-body">
+  <div class="container">
   <header class="main-header width-site">
     <div class="header-logo">
     <a class="main-header-logo" href="index.html">
@@ -32,11 +33,11 @@
     </div>
   </header>
   <main class="container width-site">
-    <section class="type-home-2">
+    <section class="type-home-2 ">
       <form class="selection-post" method="post" action="#">
         <div class="ability">
-        <ul>
-          <h2>Инфраструктура:</h2>
+          <h2 class="ability-text">Инфраструктура:</h2>
+        <ul class="infr">
           <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" value="Бассейн" id="checkbox01" checked>
           <label for="checkbox01">Бассейн</label></li>
           <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox" name="parking" value="Парковка" id="checkbox02">
@@ -46,8 +47,8 @@
         </ul>
         </div>
         <div class="ability-1">
+          <h2 class="ability-text-1">Тип жилья:</h2>
           <ul>
-            <h2>Тип жилья:</h2>
             <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" value="Гостиница" id="checkbox04" checked>
             <label for="checkbox04">Гостиница</label></li>
             <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" value="Мотель" id="checkbox05" checked>
@@ -56,30 +57,31 @@
             <label for="checkbox06">Апартаменты</label></li>
           </ul>
           </div>
-        <div class="price-1">
-          <div class="price-title">Стоимости в сутки, ₽:</div>
-          <div class="cost-control">
-            <label class="cost-from">От <input type="text" name="from" value="0" id="from-value"></label>
-            <label class="cost-to">До <input type="text" name="to" value="3000" id="to-value"></label>
-          </div>
-          <div class="cost-range">
-            <div class="scale">
-              <div class="bar"></div>
-            </div>
-            <div class="range-toggle range-toggle-min"></div>
-            <div class="range-toggle range-toggle-max"></div>
-          <div>
-          <button type="button" name="show">Показать</button>
-        </div>
+        <div class="filter-range">
+ <div class="filter-range-title">Стоимость в сутки, &#8381;:</div>
+  <div class="price-controls">
+    <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+    <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+  </div>
+  <div class="range-controls">
+    <div class="scale">
+      <div class="bar"></div>
+    </div>
+    <div class="range-toggle range-toggle-min"></div>
+    <div class="range-toggle range-toggle-max"></div>
+  </div>
+ <button class="btn-transparent" type="submit">Показать</button>
+ </div>
       </form>
     </section>
     <section class="sort-selector">
       <h2 class="found">Найдено: 3</h2>
-      <div class="sort-1">Сортировка:
+      <div class="sort-1">
+        <p class="sort-text">Сортировка:</p>
       <ul class="sort">
-        <li><a class="sort" href="blank.html">По цене</a></li>
-        <li><a class="sort" href="blank.html">По типу</a></li>
-        <li><a class="sort" href="blank.html">По рейтингу</a></li>
+        <li><a href="blank.html">По цене</a></li>
+        <li><a href="blank.html">По типу</a></li>
+        <li><a href="blank.html">По рейтингу</a></li>
       </ul>
     </div>
     <div class="sorting-price">
@@ -96,23 +98,24 @@
             <p class="hause-img">
               <img src="images/catalog/photo_catalog_1.jpg" width="135" height="90" alt="Amara Resort & Spa" />
             </p>
+            </div>
             <div class="submit-house">
-              <a class="house" href="blank.html">
                 <div class="name-hause">
-                  <h3>Amara Resort & Spa</h3>
+                  <a class="house" href="blank.html">
+                  <h3 class="amara-h">Amara Resort & Spa</h3>
+                </a>
                 </div>
-              </a>
               <div class="hotel-text-1">
                 <p class="text-3">Гостиница</p>
-                <p class="text-3">от 4000</p>
+                <p class="text-3">от 4000 &#8381;</p>
               </div>
               <div class="bh">
               <button class="button-house-1" type="submit">Подробнее</button>
               <button class="button-house-2" type="submit">Забронировать</button>
-            </div>
+              </div>
             </div>
             <div class="stars-img">
-              <p>
+              <p class="stars-images">
                 <img src="images/stars/stars_4.png" width="91" height="17" alt="stars" />
               </p>
               <p class="text-stars">Рейтинг: 8,5</p>
@@ -125,15 +128,16 @@
             <p class="hause-img">
               <img src="images/catalog/photo_catalog_2.jpg" alt="Desert Quail Inn" />
             </p>
+            </div>
             <div class="submit-house">
+              <div class="name-hause">
               <a class="house" href="blank.html">
-                <div class="name-hause">
-                  <h3>Desert Quail Inn</h3>
-                </div>
+                  <h3 class="desert-h">Desert Quail Inn</h3>
               </a>
-              <div class="hotel-text-1">
-                <p class="text-3">Мотель</p>
-                <p class="text-3">от 3000</p>
+            </div>
+              <div class="hotel-text-2">
+                <p class="text-desert">Мотель</p>
+                <p class="text-desert">от 3000 &#8381;</p>
               </div>
               <div class="bh">
                 <button class="button-house-1" type="submit">Подробнее</button>
@@ -143,7 +147,7 @@
               </div>
             </div>
             <div class="stars-img star-bad-2">
-              <p>
+              <p class="stars-images">
                 <img src="images/stars/stars_3.png" alt="stars" />
               </p>
               <p class="text-stars star-bad-2">Рейтинг: 8,9</p>
@@ -156,17 +160,18 @@
             <p class="hause-img">
               <img src="images/catalog/photo_catalog_3.jpg" alt="Villas at Poco Diablo" />
             </p>
+            </div>
             <div class="submit-house">
               <a class="house" href="blank.html">
                 <div class="name-hause">
-                  <h3>Villas at Poco Diablo</h3>
-                </div>
+                  <h3 class="villas-h">Villas at Poco Diablo</h3>
               </a>
-              <div class="hotel-text-1">
-                <p class="text-3">Аппартаменты</p>
-                <p class="text-3">от 2000</p>
+            </div>
+              <div class="hotel-text-3">
+                <p class="hotel-villas">Апартаменты</p>
+                <p class="hotel-villas">от 2000 &#8381;</p>
               </div>
-              <div class="bh">
+              <div class="bh bh-villas">
               <button class="button-house-1" type="submit">Подробнее</button>
               <button class="button-house-2" type="submit">
                 Забронировать
@@ -174,7 +179,7 @@
             </div>
             </div>
             <div class="stars-img star-bad-1">
-              <p>
+              <p class="stars-images">
                 <img src="images/stars/stars_2.png" alt="stars" />
               </p>
               <p class="text-stars stars-bad-1">Рейтинг: 9,2</p>
@@ -182,8 +187,8 @@
           </li>
       </ul>
     </section>
-  </main>
-    <footer class="main-footer width-site">
+   </main>
+    <footer class="main-footer">
       <section class="footer-contacts">
         <h1>#VISITSEDONA</h1>
         <div>
@@ -257,6 +262,7 @@
         </a>
       </div>
     </footer>
+  </div>
 </body>
 
 </html>
