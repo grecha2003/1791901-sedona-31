@@ -153,7 +153,7 @@ nav {
 .footer-wrapper {
   bottom: 0;
   height: 120px;
-  background: rgba(255,255,255,.5);
+  background: rgba(255, 255, 255, 0.5);
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -647,7 +647,7 @@ ul {
   height: 27px;
   text-align: center;
   font-size: 13px;
-  font-family: "PT Sans", Arial, sans-serif;;
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -737,7 +737,7 @@ ul {
 }
 
 .sedona-22 {
-    width: 400px;
+  width: 400px;
   min-height: 256px;
   text-align: center;
   display: flex;
@@ -762,7 +762,7 @@ ul {
 }
 
 .sedona-22 h1 {
-    margin-top: 53px;
+  margin-top: 53px;
   font-size: 21px;
 }
 
@@ -837,7 +837,7 @@ ul {
   background-image: url(../images/checkbox-off.svg);
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
   top: 0;
@@ -901,8 +901,6 @@ ul {
   display: inline-block;
   font-size: 14px;
   line-height: 38px;
-  vertical-align: top;
-  cursor: pointer;
 }
 
 .price-controls .min-price {
@@ -911,8 +909,7 @@ ul {
 
 .price-controls .max-price {
   width: 90px;
-  padding-left: 210px;
-  margin-top: -41px;
+  margin-left: 75px;
 }
 
 .price-controls input {
