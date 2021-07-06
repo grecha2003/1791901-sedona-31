@@ -531,6 +531,7 @@ ul {
 
 .amara-h {
   margin-bottom: 23px;
+  margin-top: 0px;
 }
 
 .villas-h {
@@ -547,7 +548,7 @@ ul {
 }
 
 .desert-h {
-  margin-top: 42px;
+  margin-top: 0;
   margin-left: -2px;
 }
 
@@ -604,14 +605,12 @@ ul {
   height: 147px;
   justify-content: space-between;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .submit-house {
   max-width: 256px;
-  max-height: 147px;
-  margin-bottom: 11px;
 }
 
 .sort-selector {
@@ -631,9 +630,7 @@ ul {
 }
 
 .hause-img {
-  margin-right: 0px;
-  margin-left: 72px;
-  margin-bottom: 21px;
+  margin: 0 0 0 72px;
   padding: 0px;
   display: flex;
   flex-flow: row nowrap;
@@ -715,7 +712,6 @@ ul {
 }
 
 .name-hause {
-  margin-top: 23px;
   margin-bottom: -5px;
   margin-left: 29px;
 }
