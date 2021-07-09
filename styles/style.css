@@ -129,7 +129,7 @@ nav {
   background-color: var(--basic-white);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "footer-contacts social-button footer-copyrigh";
+  grid-template-areas: "footer-contacts social-button footer-copyright";
   align-items: center;
   position: relative;
   z-index: 1;
@@ -163,12 +163,13 @@ nav {
   margin-left: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "footer-contacts social-button footer-copyrigh";
+  grid-template-areas: "footer-contacts social-button footer-copyright";
   align-items: center;
 }
 
 .map img {
   display: block;
+  margin-top: -63px;
 }
 
 .button-house-1 {
@@ -226,11 +227,12 @@ nav {
 
 .icons {
   margin-left: -2px;
-  margin-top: 6px;
+  margin-top: 1px;
 }
 
 .icons-3 {
-  margin-top: 3px;
+  margin-top: -4px;
+  margin-left: 1px;
 }
 
 .map {
@@ -273,7 +275,13 @@ nav {
 }
 
 .inter h3 {
-  font-weight: 700;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  margin-top: 28px;
+  margin-right: 11px;
 }
 
 .inter-2 {
@@ -339,6 +347,12 @@ nav {
   color: var(--basic-darker-blue);
 }
 
+.website {
+  position: absolute;
+  margin-left: -89px;
+  padding-top: 6px;
+}
+
 .lol {
   padding: 0;
   margin: 0;
@@ -397,7 +411,7 @@ ul {
   display: flex;
   justify-content: center;
   margin-left: -90px;
-  margin-top: 8px;
+  margin-top: -17px;
 }
 
 .container {
@@ -422,6 +436,7 @@ ul {
 .features {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 49px;
 }
 
 .news-list {
@@ -462,39 +477,77 @@ ul {
   background-color: #eeeeee;
 }
 
+.road p,
+.good-road p,
+.few-tourists p {
+  line-height: 20px;
+  margin-top: 27px;
+  word-spacing: 0px;
+}
+
 .news-1 {
   color: #333333;
   font-size: 14px;
   line-height: 20px;
 }
 
-.features-list p,
-.news-list p {
-  margin: 0 10px;
-  margin-top: 27px;
+.icon-live p {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    line-height: 21px;
+    margin-top: 21px;
+    word-spacing: 0px;
+}
+
+.icon-burger p {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    line-height: 21px;
+    margin-top: 21px;
+    word-spacing: 0px;
+}
+
+.icon-souvenirs p {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    line-height: 21px;
+    margin-top: 21px;
+    word-spacing: 0px;
 }
 
 .icons-text-1 {
   margin-left: 0px;
-  margin-top: 23px;
+  margin-top: 11px;
 }
 
 .icons-text-2 {
-  margin-left: -2px;
-  margin-top: 25px;
+  margin-left: 0px;
+  margin-top: 13px;
 }
 
 .icons-text-3 {
-  margin-left: 1px;
-  margin-top: 22px;
+  margin-left: 2px;
+  margin-top: 12px;
 }
 
 .photo {
   display: grid;
+  width: 800px;
 }
 
 .bridge-photo {
   display: grid;
+  width: 800px;
+  margin-top: -15px;
 }
 
 .bridge {
@@ -507,7 +560,7 @@ ul {
   max-height: 121px;
   justify-content: left;
   margin-left: 172px;
-  margin-top: 4px;
+  margin-top: -18px;
   font-size: 10px;
   font-weight: bold;
 }
@@ -525,8 +578,8 @@ ul {
 .footer-name {
   max-width: 200px;
   max-height: 120px;
-  margin-left: 78px;
-  margin-top: 33px;
+  margin-left: 155px;
+  margin-top: 11px;
 }
 
 .amara-h {
@@ -718,7 +771,6 @@ ul {
 
 .sedona-1 {
   width: 400px;
-  min-height: 256px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -729,7 +781,6 @@ ul {
   line-height: 21px;
   align-items: center;
   text-transform: uppercase;
-  margin-top: -8px;
 }
 
 .sedona-22 {
@@ -745,28 +796,42 @@ ul {
   line-height: 21px;
   align-items: center;
   text-transform: uppercase;
-  margin-top: -8px;
+  margin-top: -15px;
+}
+
+.sedona-22 p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 14px;
+  word-spacing: -1px;
 }
 
 .sedona-1 h1 {
-  margin-top: 53px;
+  margin-top: 47px;
   font-size: 21px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
 }
 
 .sedona-1 p {
-  margin-top: 12px;
+  margin-top: 11px;
+  word-spacing: 0px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .sedona-22 h1 {
-  margin-top: 53px;
+  margin-top: 48px;
   font-size: 21px;
-}
-
-.photo,
-.bridge-photo {
-  width: 800px;
-  min-height: 256px;
-  margin-top: -8px;
 }
 
 .visually-hidden {
@@ -1045,25 +1110,22 @@ ul {
   line-height: 30px;
   font-size: 11px;
   padding-bottom: 63px;
-  word-spacing: -3px;
+  word-spacing: 0;
 }
 
 .welcome-p {
   display: block;
   margin-top: 38px;
-  margin-bottom: -13px;
   word-spacing: 0px;
   font-size: 14px;
 }
 
-.welcom h1 {
+.welcome-h1 {
   color: #000000;
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 21px;
+  font-size: 11px;
   font-weight: bold;
-  line-height: 26px;
-  margin-top: 11px;
-  margin-bottom: 27px;
+  word-spacing: -3px;
 }
 
 .welcom p {
@@ -1100,6 +1162,11 @@ ul {
 .search-form input[name="date-of-entry"], .search-form input[name="date-of-departure"] {
     padding-left: 15px;
     position: relative;
+    margin-left: 19px;
+}
+
+.search-form input[name="date-of-departure"] {
+  margin-top: -16px;
 }
 
 .search-form input[name="date-of-entry"]:hover, .search-form input[name="date-of-departure"]:hover {
@@ -1111,9 +1178,23 @@ ul {
   outline: 2px solid #e5e5e5;
 }
 
-.search-form .entry, .search-form .departure {
-    padding-top: 5px;
-    margin-bottom: 10px;
+.search-form, .search-form .departure {
+  padding-top: 3px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 0px;
+  margin-top: -1px;
+}
+
+.entry {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  margin-top: 54px;
 }
 
 .search-form-visible {
@@ -1164,15 +1245,15 @@ button, input, select, textarea {
 .icon-calendar {
   fill: var(--basic-ligt-gray);
   position: absolute;
-  margin-left: 215px;
-  bottom: 155px;
+  margin-left: 214px;
+  bottom: 154px;
 }
 
 .icon-calendar-2 {
   fill: var(--basic-ligt-gray);
   position: absolute;
-  margin-left: 215px;
-  margin-top: 42px;
+  margin-left: 214px;
+  margin-top: 63px;
 }
 
 .adults{
@@ -1181,7 +1262,7 @@ button, input, select, textarea {
 }
 .adults label{
   display: inline-block;
-  margin-top: 7px;
+  margin-left: -39px;
   vertical-align: baseline;
 }
 .children{
@@ -1190,8 +1271,7 @@ button, input, select, textarea {
 }
 .children label{
   display: inline-block;
-  margin-top: 7px;
-  margin-left: 22%;
+  margin-left: 11%;
   vertical-align: baseline;
 }
 .quantity-controls{
@@ -1199,6 +1279,7 @@ button, input, select, textarea {
   width: 114px;
   height: 38px;
   font-size: 0;
+  margin-top: -23px;
   background-color: #f2f2f2;
 }
 .adults .quantity-controls{
@@ -1288,6 +1369,7 @@ button, input, select, textarea {
   font-weight: bold;
   color: var(--basic-white);
   background-color: #81b3d2;
+  text-transform: uppercase;
 }
 .modal-search-btn:hover{
   background-color: #669ec0;
@@ -1295,4 +1377,14 @@ button, input, select, textarea {
 .modal-search-btn:active{
   background-color: #5496bd;
   color: #88b6d1;
+}
+
+.modal-btn {
+  position: relative;
+}
+
+.modal {
+  position: absolute;
+  z-index: 100;
+  margin-left: 458px;
 }
