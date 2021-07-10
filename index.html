@@ -12,9 +12,8 @@
     <link href="normalize.css" rel="stylesheet" />
     <link href="styles/style.css" rel="stylesheet" />
   </head>
-
   <body class="page-body">
-    <div? class="container">
+    <div class="container">
       <header class="main-header width-site">
         <div class="header-logo">
           <a class="main-header-logo" href="index.html">
@@ -38,7 +37,6 @@
           </nav>
         </div>
       </header>
-
       <main class="container width-site">
         <a class="welcome-img">
           <img src="images/welcome.png" alt="welcome" />
@@ -178,6 +176,7 @@
             aria-label="Кнопка Поиск гостиницы в Седоне"
             >ПОИСК ГОСТИНИЦЫ В Cедоне</a
           >
+          </div>
         </section>
         <section class="modal">
           <form
@@ -219,7 +218,8 @@
                 />
               </svg>
               </div>
-                          </div>
+              </div>
+              <div class="departure">
             <label class="departure" for="date-of-departure">
               Дата выезда:
               <a class="date-of-departure-cal" href="#"
@@ -253,9 +253,11 @@
                 />
               </svg>
             </div>
+            </div>
+            <div class="modal-quantity">
             <div class="adults">
               <label for="adults">Взрослые:</label>
-              <div class="quantity-controls">
+              <div class="quantity-controls quantity-controls-1">
                 <button class="quantity-less" type="button" title="Меньше">Меньше</button>
                 <input type="text" name="adults" id="adults" value="2">
                 <button class="quantity-more" type="button" title="Больше">Больше</button>
@@ -263,11 +265,12 @@
             </div>
             <div class="children">
               <label for="children">Дети:</label>
-              <div class="quantity-controls">
+              <div class="quantity-controls quantity-controls-2">
                 <button class="quantity-less" type="button" title="Меньше">Меньше</button>
                 <input type="text" name="children" id="children" value="0">
                 <button class="quantity-more" type="button" title="Больше">Больше</button>
               </div>
+            </div>
             </div>
             <div class="btn modal-search-btn">
             <button class="btn modal-search-btn" type="submit">

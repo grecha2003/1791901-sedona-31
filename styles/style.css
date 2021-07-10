@@ -153,7 +153,7 @@ nav {
 .footer-wrapper {
   bottom: 0;
   height: 120px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.9);
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -169,7 +169,7 @@ nav {
 
 .map img {
   display: block;
-  margin-top: -63px;
+      margin-top: -63px;
 }
 
 .button-house-1 {
@@ -271,6 +271,7 @@ nav {
   text-align: center;
   font-size: 25px;
   line-height: 24px;
+  margin-top: 56px;
   font-style: normal;
 }
 
@@ -469,7 +470,7 @@ ul {
 .road,
 .good-road,
 .few-tourists {
-  min-height: 256px;
+  min-height: 228px;
   text-align: center;
   line-height: 19px;
   font-size: 18px;
@@ -492,36 +493,36 @@ ul {
 }
 
 .icon-live p {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    line-height: 21px;
-    margin-top: 21px;
-    word-spacing: 0px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  line-height: 21px;
+  margin-top: 21px;
+  word-spacing: 0px;
 }
 
 .icon-burger p {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    line-height: 21px;
-    margin-top: 21px;
-    word-spacing: 0px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  line-height: 21px;
+  margin-top: 21px;
+  word-spacing: 0px;
 }
 
 .icon-souvenirs p {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    line-height: 21px;
-    margin-top: 21px;
-    word-spacing: 0px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  line-height: 21px;
+  margin-top: 21px;
+  word-spacing: 0px;
 }
 
 .icons-text-1 {
@@ -1159,46 +1160,61 @@ ul {
   box-shadow: 0px 0px 15px 7px rgb(0 1 1 / 15%);
 }
 
-.search-form input[name="date-of-entry"], .search-form input[name="date-of-departure"] {
-    padding-left: 15px;
-    position: relative;
-    margin-left: 19px;
+.search-form input[name="date-of-entry"],
+.search-form input[name="date-of-departure"] {
+  padding-left: 15px;
+  position: relative;
 }
 
 .search-form input[name="date-of-departure"] {
   margin-top: -16px;
 }
 
-.search-form input[name="date-of-entry"]:hover, .search-form input[name="date-of-departure"]:hover {
+.search-form input[name="date-of-entry"]:hover,
+.search-form input[name="date-of-departure"]:hover {
   background-color: #ebebeb;
 }
 
-.search-form input[name="date-of-entry"]:focus, .search-form input[name="date-of-departure"]:focus {
+.search-form input[name="date-of-entry"]:focus,
+.search-form input[name="date-of-departure"]:focus {
   background-color: var(--basic-white);
   outline: 2px solid #e5e5e5;
 }
 
-.search-form, .search-form .departure {
-  padding-top: 3px;
-  font-family: PT Sans;
+.search-form,
+.search-form {
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 0px;
-  margin-top: -1px;
 }
 
-.entry {
-  font-family: PT Sans;
+.departure {
+  display: flex;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  margin-top: 54px;
+  margin-top: 18px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.entry {
+  display: flex;
+  justify-content: space-between;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  align-items: center;
+  margin-top: 2px;
 }
 
 .search-form-visible {
-    display: flex;
+  display: block;
 }
 
 .search-form input {
@@ -1209,9 +1225,11 @@ ul {
   text-transform: uppercase;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font: inherit;
-  margin: 0;
 }
 
 .search-form .amount {
@@ -1228,15 +1246,17 @@ button, input, select, textarea {
 }
 
 .amount button[name="minus-adult"] {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
-.icon-calendar:hover, .icon-calendar-2:hover {
+.icon-calendar:hover,
+.icon-calendar-2:hover {
   fill: var(--basic-black);
   cursor: pointer;
 }
 
-.icon-calendar:focus, .icon-calendar-2:focus {
+.icon-calendar:focus,
+.icon-calendar-2:focus {
   fill: var(--basic-darker-blue);
   cursor: pointer;
   outline: none;
@@ -1253,39 +1273,47 @@ button, input, select, textarea {
   fill: var(--basic-ligt-gray);
   position: absolute;
   margin-left: 214px;
-  margin-top: 63px;
+  margin-top: 9px;
 }
 
-.adults{
-  float: left;
-  width: 50%;
+.adults label {
+ margin-top: -3px;
 }
-.adults label{
-  display: inline-block;
-  margin-left: -39px;
-  vertical-align: baseline;
+
+.adults {
+  display: flex;
+  align-items: center;
 }
-.children{
-  float: right;
-  width: 50%;
+
+.children {
+  display: flex;
+    align-items: center;
+  margin-left: 106px;
 }
-.children label{
-  display: inline-block;
-  margin-left: 11%;
-  vertical-align: baseline;
+
+.modal-quantity {
+  display: flex;
+  margin-top: 31px;
 }
-.quantity-controls{
-  float: right;
-  width: 114px;
-  height: 38px;
-  font-size: 0;
-  margin-top: -23px;
+
+.children label {
+  margin-left: -53px;
+}
+.quantity-controls-1 {
   background-color: #f2f2f2;
+  display: flex;
+    background-color: #f2f2f2;
+    margin-left: 42px;
+    margin-top: -2px;
 }
-.adults .quantity-controls{
-  margin-right: 4px;
+
+.quantity-controls-2 {
+  background-color: #f2f2f2;
+  display: flex;
+  margin-left: 28px;
 }
-.quantity-controls input{
+
+.quantity-controls input {
   display: inline-block;
   width: 34px;
   height: inherit;
@@ -1301,17 +1329,17 @@ button, input, select, textarea {
   outline: none;
 }
 .adults input:hover,
-.children input:hover{
+.children input:hover {
   border-color: #ebebeb;
   background-color: #ebebeb;
 }
 .adults input:focus,
-.children input:focus{
+.children input:focus {
   border-color: #e5e5e5;
   background-color: #ffffff;
 }
 .quantity-less,
-.quantity-more{
+.quantity-more {
   position: relative;
   display: inline-block;
   width: 40px;
@@ -1325,7 +1353,7 @@ button, input, select, textarea {
   cursor: pointer;
 }
 .quantity-less::before,
-.quantity-more::before{
+.quantity-more::before {
   position: absolute;
   content: "";
   top: 50%;
@@ -1333,10 +1361,10 @@ button, input, select, textarea {
   width: 11px;
   height: 3px;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: #a9a9a9;
 }
-.quantity-more::after{
+.quantity-more::after {
   position: absolute;
   content: "";
   top: 50%;
@@ -1344,26 +1372,26 @@ button, input, select, textarea {
   width: 3px;
   height: 11px;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: #a9a9a9;
 }
 .quantity-less:hover::before,
 .quantity-more:hover::before,
-.quantity-more:hover::after{
+.quantity-more:hover::after {
   background-color: #000000;
 }
 .quantity-less:active::before,
 .quantity-more:active::before,
-.quantity-more:active::after{
+.quantity-more:active::after {
   background-color: #81b3d2;
 }
 
-.modal-search-btn{
-  width: 100%;
-  height: 59px;
-  margin-bottom: -45px;
-  padding: 0;
+.modal-search-btn {
+  display: inline;
+  width: 458px;
+  height: 58px;
   border: 0;
+  margin-top: 54px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -1371,10 +1399,10 @@ button, input, select, textarea {
   background-color: #81b3d2;
   text-transform: uppercase;
 }
-.modal-search-btn:hover{
+.modal-search-btn:hover {
   background-color: #669ec0;
 }
-.modal-search-btn:active{
+.modal-search-btn:active {
   background-color: #5496bd;
   color: #88b6d1;
 }
