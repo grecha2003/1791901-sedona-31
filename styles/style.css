@@ -129,7 +129,7 @@ nav {
   background-color: var(--basic-white);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "footer-contacts social-button footer-copyrigh";
+  grid-template-areas: "footer-contacts social-button footer-copyright";
   align-items: center;
   position: relative;
   z-index: 1;
@@ -153,7 +153,7 @@ nav {
 .footer-wrapper {
   bottom: 0;
   height: 120px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.9);
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -163,12 +163,13 @@ nav {
   margin-left: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "footer-contacts social-button footer-copyrigh";
+  grid-template-areas: "footer-contacts social-button footer-copyright";
   align-items: center;
 }
 
 .map img {
   display: block;
+      margin-top: -63px;
 }
 
 .button-house-1 {
@@ -226,11 +227,12 @@ nav {
 
 .icons {
   margin-left: -2px;
-  margin-top: 6px;
+  margin-top: 1px;
 }
 
 .icons-3 {
-  margin-top: 3px;
+  margin-top: -4px;
+  margin-left: 1px;
 }
 
 .map {
@@ -269,11 +271,18 @@ nav {
   text-align: center;
   font-size: 25px;
   line-height: 24px;
+  margin-top: 56px;
   font-style: normal;
 }
 
 .inter h3 {
-  font-weight: 700;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  margin-top: 28px;
+  margin-right: 11px;
 }
 
 .inter-2 {
@@ -339,6 +348,12 @@ nav {
   color: var(--basic-darker-blue);
 }
 
+.website {
+  position: absolute;
+  margin-left: -89px;
+  padding-top: 6px;
+}
+
 .lol {
   padding: 0;
   margin: 0;
@@ -397,7 +412,7 @@ ul {
   display: flex;
   justify-content: center;
   margin-left: -90px;
-  margin-top: 8px;
+  margin-top: -17px;
 }
 
 .container {
@@ -422,6 +437,7 @@ ul {
 .features {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 49px;
 }
 
 .news-list {
@@ -454,12 +470,20 @@ ul {
 .road,
 .good-road,
 .few-tourists {
-  min-height: 256px;
+  min-height: 228px;
   text-align: center;
   line-height: 19px;
   font-size: 18px;
   padding-top: 28px;
   background-color: #eeeeee;
+}
+
+.road p,
+.good-road p,
+.few-tourists p {
+  line-height: 20px;
+  margin-top: 27px;
+  word-spacing: 0px;
 }
 
 .news-1 {
@@ -468,33 +492,63 @@ ul {
   line-height: 20px;
 }
 
-.features-list p,
-.news-list p {
-  margin: 0 10px;
-  margin-top: 27px;
+.icon-live p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  line-height: 21px;
+  margin-top: 21px;
+  word-spacing: 0px;
+}
+
+.icon-burger p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  line-height: 21px;
+  margin-top: 21px;
+  word-spacing: 0px;
+}
+
+.icon-souvenirs p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  line-height: 21px;
+  margin-top: 21px;
+  word-spacing: 0px;
 }
 
 .icons-text-1 {
   margin-left: 0px;
-  margin-top: 23px;
+  margin-top: 11px;
 }
 
 .icons-text-2 {
-  margin-left: -2px;
-  margin-top: 25px;
+  margin-left: 0px;
+  margin-top: 13px;
 }
 
 .icons-text-3 {
-  margin-left: 1px;
-  margin-top: 22px;
+  margin-left: 2px;
+  margin-top: 12px;
 }
 
 .photo {
   display: grid;
+  width: 800px;
 }
 
 .bridge-photo {
   display: grid;
+  width: 800px;
+  margin-top: -15px;
 }
 
 .bridge {
@@ -507,7 +561,7 @@ ul {
   max-height: 121px;
   justify-content: left;
   margin-left: 172px;
-  margin-top: 4px;
+  margin-top: -18px;
   font-size: 10px;
   font-weight: bold;
 }
@@ -525,8 +579,8 @@ ul {
 .footer-name {
   max-width: 200px;
   max-height: 120px;
-  margin-left: 78px;
-  margin-top: 33px;
+  margin-left: 155px;
+  margin-top: 11px;
 }
 
 .amara-h {
@@ -718,7 +772,6 @@ ul {
 
 .sedona-1 {
   width: 400px;
-  min-height: 256px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -729,7 +782,6 @@ ul {
   line-height: 21px;
   align-items: center;
   text-transform: uppercase;
-  margin-top: -8px;
 }
 
 .sedona-22 {
@@ -745,28 +797,42 @@ ul {
   line-height: 21px;
   align-items: center;
   text-transform: uppercase;
-  margin-top: -8px;
+  margin-top: -15px;
+}
+
+.sedona-22 p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 14px;
+  word-spacing: -1px;
 }
 
 .sedona-1 h1 {
-  margin-top: 53px;
+  margin-top: 47px;
   font-size: 21px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
 }
 
 .sedona-1 p {
-  margin-top: 12px;
+  margin-top: 11px;
+  word-spacing: 0px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .sedona-22 h1 {
-  margin-top: 53px;
+  margin-top: 48px;
   font-size: 21px;
-}
-
-.photo,
-.bridge-photo {
-  width: 800px;
-  min-height: 256px;
-  margin-top: -8px;
 }
 
 .visually-hidden {
@@ -1045,28 +1111,308 @@ ul {
   line-height: 30px;
   font-size: 11px;
   padding-bottom: 63px;
-  word-spacing: -3px;
+  word-spacing: 0;
 }
 
 .welcome-p {
   display: block;
   margin-top: 38px;
-  margin-bottom: -13px;
   word-spacing: 0px;
   font-size: 14px;
 }
 
-.welcom h1 {
+.welcome-h1 {
   color: #000000;
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 21px;
+  font-size: 11px;
   font-weight: bold;
-  line-height: 26px;
-  margin-top: 11px;
-  margin-bottom: 27px;
+  word-spacing: -3px;
 }
 
 .welcom p {
   line-height: 26px;
   margin-bottom: 0px;
+}
+
+.search-form {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  left: 50%;
+  margin-left: -284px;
+  padding: 55px;
+  width: 568px;
+  height: 395px;
+  background: #ffffff;
+  font-weight: bold;
+  line-height: 26px;
+  box-shadow: 0px 0px 15px 7px rgb(0 1 1 / 15%);
+}
+
+.search-form input[name="date-of-entry"],
+.search-form input[name="date-of-departure"] {
+  padding-left: 15px;
+  position: relative;
+}
+
+.search-form input[name="date-of-departure"] {
+  margin-top: -16px;
+}
+
+.search-form input[name="date-of-entry"]:hover,
+.search-form input[name="date-of-departure"]:hover {
+  background-color: #ebebeb;
+}
+
+.search-form input[name="date-of-entry"]:focus,
+.search-form input[name="date-of-departure"]:focus {
+  background-color: var(--basic-white);
+  outline: 2px solid #e5e5e5;
+}
+
+.search-form,
+.search-form {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.departure {
+  display: flex;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  margin-top: 18px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.entry {
+  display: flex;
+  justify-content: space-between;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.search-form-visible {
+  display: block;
+}
+
+.search-form input {
+  border: none;
+  background-color: rgb(242, 242, 242);
+  height: 35px;
+  width: 331px;
+  text-transform: uppercase;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.search-form .amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 458px;
+  box-sizing: border-box;
+}
+
+.modal-adults {
+  max-width: 44px;
+}
+
+.amount button[name="minus-adult"] {
+  margin-left: 40px;
+}
+
+.icon-calendar:hover,
+.icon-calendar-2:hover {
+  fill: var(--basic-black);
+  cursor: pointer;
+}
+
+.icon-calendar:focus,
+.icon-calendar-2:focus {
+  fill: var(--basic-darker-blue);
+  cursor: pointer;
+  outline: none;
+}
+
+.icon-calendar {
+  fill: var(--basic-ligt-gray);
+  position: absolute;
+  margin-left: 214px;
+  bottom: 154px;
+}
+
+.icon-calendar-2 {
+  fill: var(--basic-ligt-gray);
+  position: absolute;
+  margin-left: 214px;
+  margin-top: 9px;
+}
+
+.adults label {
+ margin-top: -3px;
+}
+
+.adults {
+  display: flex;
+  align-items: center;
+}
+
+.children {
+  display: flex;
+    align-items: center;
+  margin-left: 106px;
+}
+
+.modal-quantity {
+  display: flex;
+  margin-top: 31px;
+}
+
+.children label {
+  margin-left: -53px;
+}
+.quantity-controls-1 {
+  background-color: #f2f2f2;
+  display: flex;
+    background-color: #f2f2f2;
+    margin-left: 42px;
+    margin-top: -2px;
+}
+
+.quantity-controls-2 {
+  background-color: #f2f2f2;
+  display: flex;
+  margin-left: 28px;
+}
+
+.quantity-controls input {
+  display: inline-block;
+  width: 34px;
+  height: inherit;
+  border: 2px solid #f2f2f2;
+  padding: 4px 0;
+  padding-left: 11px;
+  box-sizing: border-box;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  background: none;
+  outline: none;
+}
+.adults input:hover,
+.children input:hover {
+  border-color: #ebebeb;
+  background-color: #ebebeb;
+}
+.adults input:focus,
+.children input:focus {
+  border-color: #e5e5e5;
+  background-color: #ffffff;
+}
+.quantity-less,
+.quantity-more {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: inherit;
+  border: none;
+  padding: 6px 0;
+  vertical-align: top;
+  font-size: 0;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+.quantity-less::before,
+.quantity-more::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 11px;
+  height: 3px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #a9a9a9;
+}
+.quantity-more::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 3px;
+  height: 11px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #a9a9a9;
+}
+.quantity-less:hover::before,
+.quantity-more:hover::before,
+.quantity-more:hover::after {
+  background-color: #000000;
+}
+.quantity-less:active::before,
+.quantity-more:active::before,
+.quantity-more:active::after {
+  background-color: #81b3d2;
+}
+
+.modal-search-btn {
+  display: inline;
+  width: 458px;
+  height: 58px;
+  border: 0;
+  margin-top: 54px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--basic-white);
+  background-color: #81b3d2;
+  text-transform: uppercase;
+}
+.modal-search-btn:hover {
+  background-color: #669ec0;
+}
+.modal-search-btn:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
+.modal-btn {
+  position: relative;
+}
+
+.modal {
+  position: absolute;
+  z-index: 100;
+  margin-left: 458px;
 }
