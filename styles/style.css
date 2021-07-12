@@ -97,24 +97,23 @@ nav {
 }
 
 .sort a {
-  color: var(--basic-black);
+  color: #b3b3b3;
+  mix-blend-mode: normal;
   opacity: 0.3;
-  text-decoration: underline;
-  text-decoration-style: dotted;
+  background-image: url(../images/line.svg);
+  background-repeat: repeat-x;
+  background-position: 2px 14px;
 }
 
 .sort a:hover {
   color: var(--basic-darker-blue);
   opacity: 1;
-  text-decoration: underline;
-  text-decoration-style: dotted;
 }
 
 .sort a:focus {
   color: var(--basic-black);
   opacity: 1;
-  text-decoration: underline;
-  text-decoration-style: dotted;
+  background-image: none;
 }
 
 .site-navigation a:focus,
@@ -169,7 +168,7 @@ nav {
 
 .map img {
   display: block;
-      margin-top: -63px;
+  margin-top: -63px;
 }
 
 .button-house-1 {
@@ -177,8 +176,9 @@ nav {
   width: 110px;
   height: 27px;
   text-align: center;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   margin-right: 6px;
+  margin-left: -4px;
   border: 0;
   color: var(--basic-white);
   font-size: 14px;
@@ -193,6 +193,7 @@ nav {
   height: 27px;
   text-align: center;
   margin-right: -28px;
+  margin-top: -1px;
   border: 0;
   color: var(--basic-white);
   font-size: 14px;
@@ -202,7 +203,7 @@ nav {
 }
 
 .bh {
-  margin-left: 30px;
+  margin-left: 32px;
   display: flex;
   margin-bottom: 8px;
 }
@@ -584,26 +585,30 @@ ul {
 }
 
 .amara-h {
-  margin-bottom: 23px;
-  margin-top: 0px;
+  margin-top: 16px;
+  margin-left: -2px;
 }
 
 .villas-h {
   margin-bottom: 8px;
-  margin-left: -1px;
+  margin-left: -2px;
+  margin-top: 1px;
 }
 
 .hotel-villas {
-  margin-left: 21px;
+  margin-left: 20px;
+  margin-bottom: 15px;
 }
 
 .bh-villas {
-  margin-bottom: 3px;
+  margin-bottom: -5px;
+  margin-left: 33px;
+  margin-right: -1px;
 }
 
 .desert-h {
-  margin-top: 0;
-  margin-left: -2px;
+  margin-top: 16px;
+  margin-left: -3px;
 }
 
 .type-home-2 {
@@ -633,10 +638,14 @@ ul {
   box-sizing: border-box;
 }
 
+.found {
+  margin-top: 16px;
+}
+
 .sort li {
   margin-right: 32px;
   font-size: 12px;
-  margin-top: -3px;
+  margin-top: -8px;
 }
 
 .ability-1 {
@@ -645,7 +654,7 @@ ul {
 }
 
 .type-home-2 {
-  height: 125px;
+  height: 217px;
 }
 
 .button-see-1 {
@@ -656,7 +665,7 @@ ul {
 .hauses-preice {
   display: flex;
   width: 1200px;
-  height: 147px;
+  height: 150px;
   justify-content: space-between;
   display: flex;
   align-items: center;
@@ -680,11 +689,11 @@ ul {
 .sort-text {
   margin-left: 6px;
   font-size: 12px;
-  margin-top: 9px;
+  margin-top: 5px;
 }
 
 .hause-img {
-  margin: 0 0 0 72px;
+  margin: 0 0 -6px 72px;
   padding: 0px;
   display: flex;
   flex-flow: row nowrap;
@@ -692,24 +701,41 @@ ul {
 }
 
 .text-stars {
+  display: flex;
   color: #666666;
   background-color: #f6f6f6;
   width: 110px;
   height: 27px;
   text-align: center;
-  font-size: 13px;
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 21px;
-  padding-top: 4px;
-  margin-right: 70px;
+  margin-right: 71px;
+  margin-top: 45px;
+  align-items: center;
+  justify-content: center;
 }
 
 .stars-images {
+  margin-right: 72px;
+  margin-bottom: -3px;
+  margin-top: 17px;
+}
+
+.text-stars-a {
+  margin-top: 40px;
   margin-right: 71px;
-  margin-bottom: 43px;
+}
+
+.stars-images-a {
+  margin-right: 72px;
+  margin-top: 18px;
+  height: 25px;
+}
+
+.stars-bad-1 {
+  width: 111px;
 }
 
 .hotel-text-1 {
@@ -729,15 +755,16 @@ ul {
 
 .hotel-text-3 {
   display: flex;
-  margin-left: 7px;
+  margin-left: 8px;
   line-height: 9px;
   margin-bottom: 7px;
   width: 250px;
 }
 
 .text-desert {
-  margin-right: 62px;
-  margin-top: 0px;
+  margin-right: 66px;
+  margin-top: -1px;
+  margin-left: -2px;
   color: #333333;
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
@@ -746,8 +773,9 @@ ul {
 }
 
 .text-3 {
-  margin-right: 37px;
+  margin-right: 40px;
   margin-top: 0px;
+  margin-left: -2px;
   color: #333333;
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
@@ -880,19 +908,33 @@ ul {
   user-select: none;
   margin-top: 20px;
   max-width: 50px;
-  font-style: "PT Sans";
+  font-family: "PT Sans";
   font-style: normal;
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
+  font-size: 14px;
+}
+
+label[for="checkbox01"] {
+  margin-top: -1px;
+}
+
+label[for="checkbox04"] {
+  margin-top: 19px;
+  margin-left: 2px;
+}
+
+label[for="checkbox05"] {
+  margin-left: 1px;
+}
+
+label[for="checkbox06"] {
+  margin-left: 1px;
 }
 
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
   left: -42px;
-  top: 0;
+  top: 2px;
   min-width: 25px;
   min-height: 25px;
   background-repeat: no-repeat;
@@ -902,7 +944,7 @@ ul {
 .filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 1px;
   left: -42px;
   width: 29px;
   height: 30px;
@@ -926,8 +968,8 @@ ul {
 
 .filter-range {
   width: 315px;
-  margin: 26px auto;
-  padding-left: 116px;
+  margin: 28px auto;
+  padding-left: 120px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -937,11 +979,12 @@ ul {
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
+  margin-left: -2px;
 }
 
 .price-controls {
   position: relative;
-  height: 36px;
+  height: 35px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
@@ -962,7 +1005,7 @@ ul {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 31px;
 }
 
 .price-controls .min-price {
@@ -971,7 +1014,7 @@ ul {
 
 .price-controls .max-price {
   width: 90px;
-  margin-left: 75px;
+  margin-left: 71px;
 }
 
 .price-controls input {
@@ -987,6 +1030,7 @@ ul {
 .range-controls {
   position: relative;
   margin-bottom: 32px;
+  margin-top: -2px;
 }
 
 .range-controls .scale {
@@ -1081,7 +1125,7 @@ ul {
 .sorting-price-list li {
   display: block;
   margin-left: -20px;
-  margin-top: 9px;
+  margin-top: 4px;
   height: 268px;
   width: 43px;
   font-size: 15px;
@@ -1277,7 +1321,7 @@ textarea {
 }
 
 .adults label {
- margin-top: -3px;
+  margin-top: -3px;
 }
 
 .adults {
@@ -1287,7 +1331,7 @@ textarea {
 
 .children {
   display: flex;
-    align-items: center;
+  align-items: center;
   margin-left: 106px;
 }
 
@@ -1302,9 +1346,9 @@ textarea {
 .quantity-controls-1 {
   background-color: #f2f2f2;
   display: flex;
-    background-color: #f2f2f2;
-    margin-left: 42px;
-    margin-top: -2px;
+  background-color: #f2f2f2;
+  margin-left: 42px;
+  margin-top: -2px;
 }
 
 .quantity-controls-2 {
@@ -1415,4 +1459,8 @@ textarea {
   position: absolute;
   z-index: 100;
   margin-left: 458px;
+}
+
+.main-footer-catalog {
+  height: 120px;
 }
