@@ -25,6 +25,7 @@
   --white-4: #cccccc;
   --white-5: #ebebeb;
 }
+
 body {
   min-width: 1200px;
   margin: 0;
@@ -177,11 +178,14 @@ nav {
 }
 
 .button-house-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--basic-darker-blue);
   width: 110px;
   height: 27px;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 9px;
   margin-right: 6px;
   margin-left: -4px;
   border: 0;
@@ -193,6 +197,9 @@ nav {
 }
 
 .button-house-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--light-brown);
   width: 142px;
   height: 27px;
@@ -586,13 +593,12 @@ ul {
 
 .amara-h {
   margin-top: 16px;
-  margin-left: -2px;
 }
 
 .villas-h {
-  margin-bottom: 8px;
-  margin-left: -2px;
-  margin-top: 1px;
+  margin-bottom: 7px;
+  margin-left: 0px;
+  margin-top: 2px;
 }
 
 .hotel-villas {
@@ -608,7 +614,7 @@ ul {
 
 .desert-h {
   margin-top: 16px;
-  margin-left: -3px;
+  margin-left: -1px;
 }
 
 .type-home-2 {
@@ -681,8 +687,8 @@ ul {
   margin: 0;
   padding-left: 60px;
   max-height: 85px;
-  padding-left: 63px;
-  padding-top: 14px;
+  padding-left: 31px;
+  padding-top: 1px;
 }
 
 .sort-text {
@@ -912,12 +918,8 @@ ul {
   font-size: 14px;
 }
 
-label[for="checkbox01"] {
-  margin-top: -1px;
-}
-
 label[for="checkbox04"] {
-  margin-top: 19px;
+  margin-top: 17px;
   margin-left: 2px;
 }
 
@@ -929,7 +931,7 @@ label[for="checkbox06"] {
   margin-left: 1px;
 }
 
-.filter-input-checkbox + label::before {
+.filter-input-checkbox+label::before {
   content: "";
   position: absolute;
   left: -42px;
@@ -940,10 +942,9 @@ label[for="checkbox06"] {
   background-image: url(../images/checkbox-off.svg);
 }
 
-.filter-input-checkbox:checked + label::before {
+.filter-input-checkbox:checked+label::before {
   content: "";
   position: absolute;
-  top: 1px;
   left: -42px;
   width: 29px;
   height: 30px;
@@ -955,7 +956,7 @@ label[for="checkbox06"] {
   width: 180px;
   margin-left: -49px;
   font-size: 16px;
-  margin-top: 28px;
+  margin-top: 25px;
 }
 
 .ability-text-1 {
@@ -983,7 +984,8 @@ label[for="checkbox06"] {
 
 .price-controls {
   position: relative;
-  height: 35px;
+  height: 32px;
+  margin-left: -2px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid var(--basic-white);
@@ -1029,7 +1031,6 @@ label[for="checkbox06"] {
 .range-controls {
   position: relative;
   margin-bottom: 32px;
-  margin-top: -2px;
 }
 
 .range-controls .scale {
@@ -1288,6 +1289,10 @@ textarea {
   max-width: 44px;
 }
 
+.modal-map{
+  margin-top: -63px;
+}
+
 .amount button[name="minus-adult"] {
   margin-left: 40px;
 }
@@ -1342,6 +1347,7 @@ textarea {
 .children label {
   margin-left: -53px;
 }
+
 .quantity-controls-1 {
   background-color: var(--basic-gray-white);
   display: flex;
@@ -1369,16 +1375,19 @@ textarea {
   background: none;
   outline: none;
 }
+
 .adults input:hover,
 .children input:hover {
   border-color: var(--white-5);
   background-color: var(--white-5);
 }
+
 .adults input:focus,
 .children input:focus {
   border-color: var(--white-1);
   background-color: var(--basic-white);
 }
+
 .quantity-less,
 .quantity-more {
   position: relative;
@@ -1393,6 +1402,7 @@ textarea {
   outline: none;
   cursor: pointer;
 }
+
 .quantity-less::before,
 .quantity-more::before {
   position: absolute;
@@ -1405,6 +1415,7 @@ textarea {
   transform: translate(-50%, -50%);
   background-color: var(--basic-ligt-gray);
 }
+
 .quantity-more::after {
   position: absolute;
   content: "";
@@ -1416,11 +1427,13 @@ textarea {
   transform: translate(-50%, -50%);
   background-color: var(--basic-ligt-gray);
 }
+
 .quantity-less:hover::before,
 .quantity-more:hover::before,
 .quantity-more:hover::after {
   background-color: var(--basic-black);
 }
+
 .quantity-less:active::before,
 .quantity-more:active::before,
 .quantity-more:active::after {
@@ -1440,9 +1453,11 @@ textarea {
   background-color: var(--basic-darker-blue);
   text-transform: uppercase;
 }
+
 .modal-search-btn:hover {
   background-color: var(--basic-hover);
 }
+
 .modal-search-btn:active {
   background-color: var(--blue);
   color: var(--blue-light);
@@ -1453,6 +1468,7 @@ textarea {
 }
 
 .modal {
+  display: block;
   position: absolute;
   z-index: 100;
   margin-left: 458px;
@@ -1460,4 +1476,8 @@ textarea {
 
 .main-footer-catalog {
   height: 120px;
+}
+
+.modal.popup-close {
+  display: none;
 }
