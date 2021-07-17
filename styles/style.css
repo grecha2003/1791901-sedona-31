@@ -1005,6 +1005,7 @@ label[for="checkbox06"] {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: baseline;
   font-size: 14px;
   line-height: 31px;
 }
@@ -1289,7 +1290,7 @@ textarea {
   max-width: 44px;
 }
 
-.modal-map{
+.modal-map {
   margin-top: -63px;
 }
 
@@ -1480,4 +1481,9 @@ textarea {
 
 .modal.popup-close {
   display: none;
+}
+
+iframe {
+  border: none;
+  width: 100%;
 }
